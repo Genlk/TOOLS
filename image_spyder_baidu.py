@@ -59,7 +59,7 @@ def check_if_already_scraber(txt_name, txt_dir = "D:/temp/query_txt/",pic_save_d
     #     print("\nWarning : %s: scraber num is %d, txt nums is %d"%(txt_name, len(os.listdir(os.path.join(pic_save_dir,txt_name.rstrip(".txt")))),len(os.listdir(os.path.join(pic_save_dir,txt_name.rstrip(".txt"))))))
     return True
 
-def doload_all_urls(txt_dir = "D:/temp/query_txt/",pic_save_dir = "D:/9-SHARE/ShareCache/基础研发部/04其他/地面识别素材-爬虫/"):
+def doload_all_urls(txt_dir = "D:/temp/query_txt/",pic_save_dir = ""):
     txts = os.listdir(txt_dir)
     for txt_name in tqdm(txts):
         if check_if_already_scraber(txt_name):
